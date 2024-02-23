@@ -1,0 +1,31 @@
+//------------------------------------------------
+@use "sass:map";
+//------------------------------------------------
+
+// Import Custom Bootstrap Variables
+@import "customGlobalVar";
+
+//------------------------------------------------
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/utilities";
+//------------------------------------------------
+
+// Import Custom Colors Palette
+@import "customPaletteColors";
+// Import Custom Utilities
+@import "customUtilities";
+// Import Custom Components
+@import "components";
+
+//------------------------------------------------
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+//------------------------------------------------
+
+// Import Custom CSS
+@import "header/header";
+@import "footer/footer";
+@import "hero_section/hero_section";
+@import "customCSS";

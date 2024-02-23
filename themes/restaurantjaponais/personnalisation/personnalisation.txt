@@ -1,0 +1,17 @@
+Personnalisation de Bootstrap 5
+
+1- Installer Node JS (si besoin)
+Ou vérifier la version de Node qui est installée : 
+node -v
+Ou vérifier la version de npm qui est installée :
+npm -v
+
+2- Installer sass
+npm install -g sass (si besoin)
+
+2- lancer la commande npm init
+pour créer le fichier package.json
+
+3- Installer Bootstrap dans le projet
+installe le dossier node_modules
+npm install bootstrap

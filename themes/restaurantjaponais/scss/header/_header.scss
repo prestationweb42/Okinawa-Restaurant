@@ -1,0 +1,61 @@
+// ***************
+// Setting Header
+// ***************
+.nav-item-13:hover > .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    transition: all 500ms ease-in-out;
+}
+
+// Nav Submenu
+// .nav-item-13:hover > .dropdown-submenu {
+//     display: flex;
+//     flex-direction: column;
+//     top: -10px;
+//     left: 158px;
+//     transition: all 500ms ease-in-out;
+// }
+.nav-link {
+    font-size: 20px;
+    color: white;
+}
+
+.dropdown-item.active {
+    background-color: var(--primary-light) !important;
+    color: var(--primary-dark) !important;
+}
+.dropdown-item:hover {
+    background-color: var(--orange) !important;
+    color: var(--primary-light) !important;
+}
+
+// Animation Link
+#menu-menu-principal-1 {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    .menu-item .nav-link {
+        position: relative;
+        // background: $shade-red-2;
+    }
+    .menu-item .nav-link::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -1;
+        width: 85%;
+        height: 1px;
+        background: #f1f1f1;
+        transform: scaleX(0);
+        transition: transform 300ms ease-in-out;
+        @media screen and (max-width: 767px) {
+            width: 50%;
+            top: 0;
+            visibility: hidden;
+        }
+    }
+    .menu-item .nav-link:hover::before {
+        transform: scaleX(1);
+    }
+}

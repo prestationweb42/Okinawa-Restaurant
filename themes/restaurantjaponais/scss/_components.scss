@@ -1,0 +1,19 @@
+// Custom Menu Accordion
+$accordion-bg: $dark;
+$accordion-color: $beige-custom;
+$accordion-button-bg: $dark;
+$accordion-button-color: $beige-custom;
+$accordion-button-active-bg: $dark;
+$accordion-button-active-color: $beige-custom;
+$accordion-button-focus-border-color: $beige-custom;
+$accordion-icon-color: $beige-custom;
+$accordion-icon-active-color: $beige-custom;
+$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+$accordion-button-focus-border-color: $beige-custom;
+$accordion-button-focus-box-shadow: $beige-custom;
+
+// Custom List Reservation
+$list-group-color: $beige-custom;
+$list-group-bg: $dark;
+$list-group-border-width: 3px;

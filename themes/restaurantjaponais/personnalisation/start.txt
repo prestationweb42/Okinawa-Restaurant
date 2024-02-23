@@ -1,0 +1,19 @@
+control version node :
+node -v
+
+control version npm :
+npm -v
+
+initialiser npm dans le dossier -> package.json
+npm init
+
+install sass dans le dossier :
+npm install -g sass
+
+run sass watch :
+sass scss/global.scss styles/raw/style.css  
+
+or with the script into package.json
+"sass": "sass scss/global.scss styles/raw/style.css --watch"
+npm run sass
+Ctrl-C to stop

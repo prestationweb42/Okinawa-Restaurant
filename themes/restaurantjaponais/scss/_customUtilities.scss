@@ -1,0 +1,221 @@
+// Utilities permet d'ajouter des margin padding aux classes de Bootstrap
+$utilities: (
+    "border-color": (
+        property: border-color,
+        class: border,
+        values: map.merge($custom-palette-colors, $theme-colors),
+    ),
+    "width": (
+        property: width,
+        class: w,
+        values:
+            map-merge(
+                map-get(map-get($utilities, "width"), "values"),
+                (
+                    33: 33%,
+                    60: 60%,
+                    66: 66%,
+                    200: 200px,
+                )
+            ),
+    ),
+    "height": (
+        property: height,
+        class: h,
+        values:
+            map-merge(
+                map-get(map-get($utilities, "height"), "values"),
+                (
+                    80: 80vh,
+                    95: 95vh,
+                    300: 300px,
+                    350: 350px,
+                    400: 400px,
+                    500: 500px,
+                    750: 750px,
+                )
+            ),
+    ),
+    "min-viewport-height": (
+        property: min-height,
+        class: min-vh,
+        values:
+            map-merge(
+                map-get(map-get($utilities, "height"), "values"),
+                (
+                    5: 5vh,
+                    10: 10vh,
+                    20: 20vh,
+                    30: 30vh,
+                    40: 40vh,
+                    50: 50vh,
+                    55: 55vh,
+                    60: 60vh,
+                    80: 80vh,
+                    90: 90vh,
+                    95: 95vh,
+                )
+            ),
+    ),
+    "margin": (
+        property: margin,
+        class: m,
+        values:
+            map-merge(
+                map-get(map-get($utilities, "margin"), "values"),
+                (
+                    50: 50px,
+                    100: 100px,
+                    200: 200px,
+                    300: 300px,
+                    400: 400px,
+                )
+            ),
+    ),
+    "margin-top": (
+        property: margin-top,
+        class: mt,
+        values:
+            map-merge(
+                map-get(map-get($utilities, "margin-top"), "values"),
+                (
+                    50: 50px,
+                    100: 100px,
+                    200: 200px,
+                    300: 300px,
+                    400: 400px,
+                )
+            ),
+    ),
+    "margin-bottom": (
+        property: margin-bottom,
+        class: mb,
+        values:
+            map-merge(
+                map-get(map-get($utilities, "margin-bottom"), "values"),
+                (
+                    50: 50px,
+                    100: 100px,
+                    200: 200px,
+                    300: 300px,
+                    400: 400px,
+                )
+            ),
+    ),
+    "margin-start": (
+        property: margin-left,
+        class: ms,
+        values:
+            map-merge(
+                map-get(map-get($utilities, "margin-start"), "values"),
+                (
+                    50: 50px,
+                    100: 100px,
+                    200: 200px,
+                    300: 300px,
+                    400: 400px,
+                )
+            ),
+    ),
+    "margin-end": (
+        property: margin-right,
+        class: me,
+        values:
+            map-merge(
+                map-get(map-get($utilities, "margin-end"), "values"),
+                (
+                    50: 50px,
+                    100: 100px,
+                    200: 200px,
+                    300: 300px,
+                    400: 400px,
+                )
+            ),
+    ),
+    "padding": (
+        property: padding,
+        class: p,
+        values:
+            map-merge(
+                map-get(map-get($utilities, "padding"), "values"),
+                (
+                    10: 10px,
+                    20: 20px,
+                    50: 50px,
+                    100: 100px,
+                    200: 200px,
+                    300: 300px,
+                    400: 400px,
+                )
+            ),
+    ),
+    "padding-top": (
+        property: padding-top,
+        class: pt,
+        values:
+            map-merge(
+                map-get(map-get($utilities, "padding-top"), "values"),
+                (
+                    10: 10px,
+                    20: 20px,
+                    50: 50px,
+                    80: 80px,
+                    100: 100px,
+                    200: 200px,
+                    300: 300px,
+                    400: 400px,
+                )
+            ),
+    ),
+    "padding-bottom": (
+        property: padding-bottom,
+        class: pb,
+        values:
+            map-merge(
+                map-get(map-get($utilities, "padding-bottom"), "values"),
+                (
+                    10: 10px,
+                    20: 20px,
+                    50: 50px,
+                    100: 100px,
+                    200: 200px,
+                    300: 300px,
+                    400: 400px,
+                )
+            ),
+    ),
+    "padding-start": (
+        property: padding-left,
+        class: ps,
+        values:
+            map-merge(
+                map-get(map-get($utilities, "padding-start"), "values"),
+                (
+                    10: 10px,
+                    20: 20px,
+                    50: 50px,
+                    100: 100px,
+                    200: 200px,
+                    300: 300px,
+                    400: 400px,
+                )
+            ),
+    ),
+    "padding-end": (
+        property: padding-right,
+        class: pe,
+        values:
+            map-merge(
+                map-get(map-get($utilities, "padding-end"), "values"),
+                (
+                    10: 10px,
+                    20: 20px,
+                    50: 50px,
+                    100: 100px,
+                    200: 200px,
+                    300: 300px,
+                    400: 400px,
+                )
+            ),
+    ),
+);

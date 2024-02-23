@@ -1,0 +1,28 @@
+// Custom Palette Perso
+$dark: #3d3a4b;
+$beige-custom: #eeebd0;
+$main-red: #c70a0a;
+$shade-red-1: #c33838;
+$shade-red-2: #ebb3a9;
+$shade-red-3: #e87ea1;
+
+// Ajoute les custom colors à la palette Bootstrap
+$custom-palette-colors: (
+    "dark": $dark,
+    "beige-custom": $beige-custom,
+    "main-red": $main-red,
+    "shade-rade-1": $shade-red-1,
+    "shade-rade-2": $shade-red-2,
+    "shade-rade-3": $shade-red-3,
+);
+$theme-colors: map.merge($custom-palette-colors, $theme-colors);
+
+// Cette boucle va rajouter cette nouvelle palette de couleurs au text et bg
+@each $key, $val in $custom-palette-colors {
+    .bg-#{$key} {
+        background-color: $val !important;
+    }
+    .text-#{$key} {
+        color: $val !important;
+    }
+}

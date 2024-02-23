@@ -1,0 +1,7 @@
+A la toute fin du projet
+Minifier la feuille de style.css sur le site suivant :
+https://www.cleancss.com/fr/css-minify/
+
+Renommer en style.min.css et placer dans le dossier cleaned
+
+Modifier le functions.php en conséquence

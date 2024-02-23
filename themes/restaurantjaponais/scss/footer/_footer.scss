@@ -1,0 +1,15 @@
+.footer__menu {
+    padding-left: 0;
+    li {
+        list-style-type: none;
+        margin-block-end: 2.1rem;
+    }
+    li:last-child {
+        margin-block-end: 0;
+    }
+    li a {
+        color: $beige-custom;
+        font-size: 1.1rem;
+        text-decoration: none;
+    }
+}
